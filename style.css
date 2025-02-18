@@ -93,6 +93,7 @@ a:hover {
   background: url('https://cdn.glitch.global/ca96bd23-f71a-49b9-839a-97ee4a668bca/Purple%20Background%20Image.jpg?v=1739770389243') no-repeat center center/cover;
   opacity: 0.3;
   z-index: -2;
+  filter: blur(5px);
 }
 
 .hero::after {
