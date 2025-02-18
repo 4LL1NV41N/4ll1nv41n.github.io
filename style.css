@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0D0D0D;
+  color: #ffffff;
+  line-height: 1.6;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: #a020f0;
+}
+
+a:hover {
+  color: #b359eb;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a020f0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a020f0;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.glitch.global/ca96bd23-f71a-49b9-839a-97ee4a668bca/Purple%20Background%20Image.jpg?v=1739770389243') no-repeat center center/cover;
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 13, 13, 1) 0%,
+    rgba(13, 13, 13, 0) 20%,
+    rgba(13, 13, 13, 0) 80%,
+    rgba(13, 13, 13, 1) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #a020f0, #ff0080);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 4s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #a020f0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-box {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  background: #2a2a2a;
+}
+
+.project-box h3 {
+  margin-bottom: 1rem;
+}
+
+.about {
+  background: #1e1e1e;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #a020f0;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.contact {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #a020f0;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+#contactBtn {
+  background: #a020f0;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contactBtn:hover {
+  background: #8817d0;
+}
+
+footer {
+  background: #000000;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
