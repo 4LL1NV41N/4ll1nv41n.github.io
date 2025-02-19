@@ -14,7 +14,9 @@ body {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
-}
+  cursor: default;
+  user-select: none;
+}2
 
 a {
   color: #a020f0;
@@ -49,6 +51,7 @@ a:hover {
   font-size: 1.8rem;
   font-weight: bold;
   color: #a020f0;
+  cursor: default;
 }
 
 .nav-links {
