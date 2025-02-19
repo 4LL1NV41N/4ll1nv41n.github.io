@@ -16,10 +16,11 @@ body {
   font-style: normal;
   cursor: default;
   user-select: none;
-}2
+}
 
 a {
   color: #a020f0;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -149,6 +150,12 @@ a:hover {
   padding: 4rem 0;
 }
 
+.projects {
+  background: #1e1e1e;
+  text-align: center;
+  padding: 4rem 0;
+}
+
 .projects h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -179,7 +186,6 @@ a:hover {
 }
 
 .about {
-  background: #1e1e1e;
   text-align: center;
   padding: 4rem 0;
 }
