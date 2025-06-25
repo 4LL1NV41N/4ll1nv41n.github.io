@@ -6,6 +6,9 @@
     <link rel="icon" href="huiajkdns fire.png" />
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <!-- The website stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
@@ -22,6 +25,13 @@
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li id="settings-btn">
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -53,17 +63,10 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects section">
+  <section id="projects" class="project``````s section">
     <div class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <div class="project-box">
-          <h3>Geometry Dash Art</h3>
-          <p> Ever since i was 5, i was attracted to this game called Geometry Dash.
-            I wasnt sure why, but i played it for ages, and i found the level editor where users are able to build 
-            levels, using simple shapes like squares and lines. This idea got me attracted, and the technicality behind me kept 
-            me building for years, so here is a bit of <a href="https://ko-fi.com/album/art-L3L01ARFFF">My Art!</a></p>
-        </div>
         <div class="project-box">
           <h3>Programming Projects & Competitions</h3>
           <p>I've made quite a number of projects ever since I was 9 such as a new Programming Language <a href ="">(SingmaLang)</a>, 
@@ -81,9 +84,17 @@
             and done many things to keep my time in check!
           </p>
         </div>
+        <div class="project-box">
+          <h3>Geometry Dash Art</h3>
+          <p> Ever since i was 5, i was attracted to this game called Geometry Dash.
+            I wasnt sure why, but i played it for ages, and i found the level editor where users are able to build 
+            levels, using simple shapes like squares and lines. This idea got me attracted, and the technicality behind me kept 
+            me building for years, so here is a bit of <a href="https://ko-fi.com/album/art-L3L01ARFFF">My Art!</a></p>
+        </div>
       </div>
     </div>
   </section>
+  
 
   <!-- Contact Section -->
   <section id="contact" class="contact section">
@@ -101,7 +112,18 @@
     </div>
   </footer>
 
-  <!-- JavaScript File -->
-  <script src="script.js"></script>
+
+  <div id="settings-panel" class="settings-panel">
+  <h2>Settings</h2>
+  <div class="setting">
+    <label for="theme-toggle">Theme:</label>
+    <select id="theme-toggle">
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+    </select>
+  </div>
+  <button id="close-settings-btn">Close</button>
+</div>
+
 </body>
 </html>

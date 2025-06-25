@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
 
 * {
   margin: 0;
@@ -7,11 +7,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Funnel Display", sans-serif;
   background-color: #0D0D0D;
   color: #ffffff;
   line-height: 1.6;
-  font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
   cursor: default;
@@ -69,10 +68,25 @@ a:hover {
   color: #ffffff;
   font-weight: 500;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
   color: #a020f0;
+}
+
+
+#settings-btn {
+  cursor: pointer;
+}
+
+#settings-btn svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+
+#settings-btn:hover svg {
+  fill: #a020f0;
 }
 
 .hero {
@@ -241,4 +255,160 @@ footer {
   margin-top: 2rem;
   color: #cccccc;
   font-size: 0.9rem;
+}
+
+.settings-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+  display: none;
+  z-index: 1001;
+}
+
+.settings-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.setting {
+  margin-bottom: 1rem;
+}
+
+#close-settings-btn {
+  background: #a020f0;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#close-settings-btn:hover {
+  background: #8817d0;
+}
+body.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.light .navbar {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light .navbar .nav-links a {
+  color: #333;
+}
+
+body.light .projects {
+  background: #e0e0e0;
+}
+
+body.light .project-box {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light .project-box h3 {
+  color: #333;
+}
+
+body.light .hero::before {
+  opacity: 0.1;
+}
+
+body.light .settings-panel {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light .settings-panel h2 {
+  color: #333;
+}
+
+body.light #close-settings-btn {
+  color: #ffffff;
+}
+
+body.light #close-settings-btn:hover {
+  background: #3e8e41;
+}
+
+body.light .hero h1 {
+  background: linear-gradient(45deg, #4CAF50, #8BC34A);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 4s ease infinite;
+}
+
+body.light footer {
+  background: #e0e0e0;
+  color: #333;
+}
+
+body.light .hero::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 240, 240, 1) 0%,
+    rgba(240, 240, 240, 0) 20%,
+    rgba(240, 240, 240, 0) 80%,
+    rgba(240, 240, 240, 1) 100%
+  );
+}
+
+body.light .hero p,
+body.light .about p,
+body.light .contact p,
+body.light footer {
+  color: #333;
+}
+body.light .hero h1 {
+  background: none;
+  color: #a020f0;
+}
+
+body.light footer {
+  background: #f0f0f0;
+}
+
+#settings-btn svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#settings-btn:hover svg {
+  fill: #8817d0;
+}
+
+body.light #settings-btn svg {
+  fill: #333;
+}
+
+body.light #settings-btn:hover svg {
+  fill: #000;
+}
+
+body.light #close-settings-btn {
+  fill: #8817d0;
+}
+
+body,
+.navbar,
+.projects,
+.project-box,
+footer {
+  transition: background-color 0.5s ease;
+}
+
+body,
+h1, h2, h3, p, a {
+  transition: color 0.5s ease;
 }
