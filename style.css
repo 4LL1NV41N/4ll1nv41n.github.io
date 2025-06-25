@@ -475,3 +475,21 @@ body.light .select {
   opacity: 1;
   transform: translateY(0);
 }
+
+#certif {
+  background: #a020f0;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0;
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  height: 7%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
