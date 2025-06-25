@@ -177,6 +177,13 @@ a:hover {
   color: #a020f0;
 }
 
+.skillstextthing {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #a020f0;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -267,6 +274,7 @@ footer {
   border-radius: 8px;
   display: none;
   z-index: 1001;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .settings-panel h2 {
@@ -442,6 +450,28 @@ h1, h2, h3, p, a {
   font-weight: bold;
 }
 
-#skills {
-  padding-bottom: 20px;
+.select {
+  font-family: "Funnel Display", sans-serif;
+  background-color: #2a2a2a;
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+
+body.light .select {
+  background-color: #ffffff;
+  color: black;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

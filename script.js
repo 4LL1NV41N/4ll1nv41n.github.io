@@ -37,3 +37,26 @@ document.getElementById('settings-btn').addEventListener('click', function() {
 document.getElementById('close-settings-btn').addEventListener('click', function() {
   document.getElementById('settings-panel').style.display = 'none';
 });
+
+const fadeInElements = document.querySelectorAll('.fade-in');
+
+function isElementInView(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom >= 0
+  );
+}
+
+function handleScroll() {
+  fadeInElements.forEach((element) => {
+    if (isElementInView(element)) {
+      element.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', handleScroll);
+
+// Trigger handleScroll on page load
+handleScroll();
