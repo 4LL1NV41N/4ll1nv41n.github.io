@@ -29,3 +29,11 @@ if (savedTheme) {
   themeToggle.value = savedTheme;
   document.body.classList.add(savedTheme);
 }
+
+document.getElementById('settings-btn').addEventListener('click', function() {
+  document.getElementById('settings-panel').style.display = 'block';
+});
+
+document.getElementById('close-settings-btn').addEventListener('click', function() {
+  document.getElementById('settings-panel').style.display = 'none';
+});

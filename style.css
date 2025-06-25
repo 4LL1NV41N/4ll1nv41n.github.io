@@ -400,6 +400,10 @@ body.light #close-settings-btn {
   fill: #8817d0;
 }
 
+body.light .skill-box {
+  background: #ffffff;
+}
+
 body,
 .navbar,
 .projects,
@@ -411,4 +415,33 @@ footer {
 body,
 h1, h2, h3, p, a {
   transition: color 0.5s ease;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-box {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-box p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#skills {
+  padding-bottom: 20px;
 }
