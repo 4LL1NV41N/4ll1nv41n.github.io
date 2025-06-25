@@ -489,7 +489,7 @@ body.light .select {
   position: absolute;
   left: 40%;
   right: 40%;
-  height: 7%;
+  height: 40px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
