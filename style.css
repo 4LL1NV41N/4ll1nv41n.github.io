@@ -490,6 +490,4 @@ body.light .select {
   left: 40%;
   right: 40%;
   height: 40px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
